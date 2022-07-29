@@ -14,7 +14,7 @@ The goal of this code challenge is to provide a broad range of coverage across v
 Deploy our application in the form of a docker image onto the necessary infrastructure you will define with terraform. AWS is the target cloud provider.  You should be able to get all the way up to creating the plan for terraform.  When we pair to review your code we will provide you aws keys to use; Feel free to test deploying this into your personal AWS account to verify it's functionality until then.
 
 To get started:
-1. Fork this repository into your own github account and then clone it locally. When you're code is ready you'll submit a pull-request to our repository from your fork.
+1. Fork this repository into your own github account and then clone it locally. When your code is ready you'll submit a pull-request to our repository from your fork.
 1. Define your infrastructure with terraform in the `terraform/` folder of this repo.
 1. You will need to provision the following:
     - A remote backend for the tfstate file. Use S3.
