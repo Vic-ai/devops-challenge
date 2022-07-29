@@ -1,7 +1,7 @@
 # Devops Code Challenge
 
 ## Description
-The goal of this cod challenge is to provide a broad range of coverage across various skill sets.  The inability to complete this exercise independently does not constitute a failure.  It's merely designed to demostrate subject matter expertise and expose knowledge gaps.  This is a 'take home' challenge that should be completed prior to your technical interview.  You will be expected to review & execute your code during the technical interview.
+The goal of this code challenge is to provide a broad range of coverage across various skill sets.  The inability to complete this exercise independently does not constitute a failure.  It's merely designed to demostrate subject matter expertise and expose knowledge gaps.  This is a 'take home' challenge that should be completed prior to your technical interview.  You will be expected to review & execute your code during the technical interview.
 
 ## Pre-Requisites
 - The Terraform CLI utility (tfenv is recommended https://github.com/tfutils/tfenv)
@@ -18,7 +18,10 @@ To get started:
 1. Inside this repo you will find:
     - An empty `terraform/` folder
 
-1. Define your infrastructure with terraform in the `terraform/` folder of this repo. You will need the following:
+1. Define your infrastructure with terraform in the `terraform/` folder of this repo. You will need to provision the following:
     - A remote backend for the tfstate file. Use S3.
     - An AWS ECR repository to push our app image to after it's built.
     - An AWS lightsail container service to deploy ^^.
+    - Outputs that include:
+        -- The URL of our container service
+    - When applied, we should be able to curl & browse to the lightsail endpoint.
