@@ -8,7 +8,7 @@ The goal of this code challenge is to provide a broad range of coverage across v
 
 ## Installation
 1. ensure all pre-req's are installed
-1. clone [this repository] (https://github.com/Vic-ai/devops-python-sample-app)
+1. clone [this repository](https://github.com/Vic-ai/devops-python-sample-app)
 
 ## Instructions
 The goal is to deploy our application in the form of a docker image onto the necessary infrastructure you will define with terraform. AWS is the target cloud provider.  You should be able to get all the way up to creating the plan for terraform.  When we pair to review your code we will provide you aws keys to use; Feel free to test deploying this into your personal AWS account to verify it's functionality until then. 
@@ -22,6 +22,6 @@ To get started:
     - A remote backend for the tfstate file. Use S3.
     - An AWS ECR repository to push our app image to after it's built.
     - An AWS lightsail container service to deploy ^^.
-    - Outputs that include:
-        -- The URL of our container service
+    - Outputs the URL of our container service
     - When applied, we should be able to curl & browse to the lightsail endpoint.
+1. Build the docker image from the python app you cloned above.
