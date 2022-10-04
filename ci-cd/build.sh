@@ -7,12 +7,12 @@ set -o pipefail
 # Get the base directory
 WORKSPACE="$(realpath "$(dirname "${0}")/../")"
 
-app_git_url=${app_git_url:-'https://github.com/Vic-ai/devops-python-sample-app'}
+app_git_url="${app_git_url:-'https://github.com/Vic-ai/devops-python-sample-app'}"
 app_name="$(basename ${app_git_url})"
 app_version='main'
 
 # Get ECR URI repository
-echo "[info] get ECR uri"
+echo "[INFO] get ECR uri"
 ecr_url="$(terragrunt output -json \
             --terragrunt-working-dir "${WORKSPACE}/terraform/enviroments/staging/eu-west-1/ecr" \
             | jq --raw-output '.repositories.value[].url')"
