@@ -1,0 +1,11 @@
+---
+
+# ECR
+repositories:
+  devops-python-sample-app:
+    public: true
+
+# LightSail
+applications:
+  devops-python-sample-app:
+    version: 'main'
