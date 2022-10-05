@@ -14,7 +14,7 @@ terragrunt apply -auto-approve \
 # Build and push image to ecr
 ${WORKSPACE}/ci-cd/build.sh
 
-# TODO: use secret storage(soops, ci-cd security storage, etc)
+# TODO: use secret storage(sops, ci-cd security storage, etc)
 export TF_VAR_secret="tIdiDuoYsnoitalutargnoC"
 
 # Create lightsail

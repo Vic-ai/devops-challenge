@@ -1,6 +1,7 @@
 variable "aws_region" {
   description = "AWS region"
   type        = string
+  nullable    = false
 }
 
 variable "create" {
@@ -24,4 +25,9 @@ variable "repositories" {
       public               = optional(bool, false)
     })
   )
+
+  validation {
+    condition     = alltrue([for k, v in var.repositories: false if v.image_count < 3 && !v.public])
+    error_message = "image_count can not be lower than 3"
+  }
 }

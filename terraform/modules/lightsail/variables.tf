@@ -1,6 +1,7 @@
 variable "aws_region" {
   description = "AWS region"
   type        = string
+  nullable    = false
 }
 
 variable "create" {
@@ -27,6 +28,7 @@ variable "applications" {
 variable "secret" {
   description = "Super secret value"
   type        = string
+  nullable    = false
   sensitive   = true
 }
 
