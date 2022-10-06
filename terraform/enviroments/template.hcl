@@ -45,4 +45,4 @@ inputs = merge(
   }
 )
 
-terraform_version_constraint = format("= 1.3.1")
+terraform_version_constraint = format("= 1.3.2")
